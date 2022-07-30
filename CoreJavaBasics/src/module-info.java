@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author lzrmx
+ *
+ */
+module CoreJavaBasics {
+}
