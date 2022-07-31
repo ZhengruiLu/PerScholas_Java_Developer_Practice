@@ -1,8 +1,6 @@
 package com.perscholas.java_basics;
 
 public class JavaBasicClass {
-	
-	
 	public static void main(String[] args) {
 		//1. two integer variables
 		int int1 = 1, int2 = 2;
