@@ -1,6 +1,12 @@
 package com.perscholas.java_basics;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
+
 
 public class JavaArrays {
 	public static void main(String[] args) {
@@ -23,10 +29,13 @@ public class JavaArrays {
 		
 //		q9();
 		
-		q10();
+//		q10();
 		
+
 		
 	}
+	
+
 	
 	private static void q1(int length) {
 		int[] arr = new int[length];
