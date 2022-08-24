@@ -15,11 +15,11 @@ public abstract class TheSystem {
     	if (getClass().getSimpleName().equals("AppSystem")) {
     		//add the items from the sample.txt to the itemCollection
     		try {
-    			String location = "E:\\SoftWare2\\eclipse-workspace\\Solution\\resources\\sample.txt";
+    			String location = "resources\\sample.txt";
         		File file = new File(location);
         		Scanner input = new Scanner(file);
         		while (input.hasNextLine()) {
-					String[] itemInfo = input.nextLine().split("\s ");
+					String[] itemInfo = input.nextLine().split("\\s{2,}");
 					itemCollection.put(itemInfo[0], new Item(itemInfo[0], itemInfo[1], Double.valueOf(itemInfo[2]), Integer.valueOf(itemInfo[3])));					
 				}
 			} catch (FileNotFoundException e) {
@@ -40,11 +40,14 @@ public abstract class TheSystem {
 
 	public Boolean checkAvailability(Item item) {
         // Your code here
-    	if (item.getQuantity() >= item.getAvaliableQuantity()) {
+    	if (item != null && item.getQuantity() >= item.getAvaliableQuantity()) {
 			System.out.println("System is unable to add " + item.getItemName() 
 			+ "to the card. System only has " + item.getAvaliableQuantity() + item.getItemName());
 			return false;
-		}else {
+		}else if(item == null) {
+			return false;
+		}
+    	else {
 			return true;
 		}
     }

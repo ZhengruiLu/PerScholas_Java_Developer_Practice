@@ -3,7 +3,7 @@ package com.example;
 public class Item{
     private String itemName;
     private String itemDesc;
-    private Double itemPrice;
+    private double itemPrice;
     private Integer quantity;
     private Integer avaliableQuantity;
     
@@ -17,7 +17,6 @@ public class Item{
         this.itemName = itemName;
         this.itemDesc = itemDesc;
         this.itemPrice = itemPrice;
-        quantity = null;
         this.avaliableQuantity = availableQuantity;
     }
 

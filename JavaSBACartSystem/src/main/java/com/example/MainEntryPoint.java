@@ -27,7 +27,7 @@ public class MainEntryPoint {
 				System.out.print("\nEnter the item's price:\n");
 				item.setItemPrice(reader.nextDouble());
 				System.out.print("\nEnter the quantity available in the System:\n");
-				item.setAvailableQuantity(reader.nextInt());
+				item.setAvaliableQuantity(reader.nextInt());
 				System.out.println(item.getItemName());
 				if (app.add(item)) {
 					System.out.println("Item successfully added");
