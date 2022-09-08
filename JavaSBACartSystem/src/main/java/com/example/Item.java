@@ -3,7 +3,7 @@ package com.example;
 public class Item{
     private String itemName;
     private String itemDesc;
-    private double itemPrice;
+    private Double itemPrice;
     private Integer quantity;
     private Integer avaliableQuantity;
     
@@ -17,6 +17,7 @@ public class Item{
         this.itemName = itemName;
         this.itemDesc = itemDesc;
         this.itemPrice = itemPrice;
+        quantity = 1;
         this.avaliableQuantity = availableQuantity;
     }
 
@@ -32,34 +33,33 @@ public class Item{
         return itemDesc;
     }
 
-    public void setItemDesc(String itemDesc) {
-        this.itemDesc = itemDesc;
-    }
+	public Double getItemPrice() {
+		return itemPrice;
+	}
 
-    public Double getItemPrice() {
-        return itemPrice;
-    }
+	public void setItemPrice(Double itemPrice) {
+		this.itemPrice = itemPrice;
+	}
 
-    public void setItemPrice(Double itemPrice) {
-        this.itemPrice = itemPrice;
-    }
+	public Integer getQuantity() {
+		return quantity;
+	}
 
-    public Integer getQuantity() {
-        return quantity;
-    }
+	public void setQuantity(Integer quantity) {
+		this.quantity = quantity;
+	}
 
-    public void setQuantity(Integer quantity) {
-        this.quantity = quantity;
-    }
+	public Integer getAvaliableQuantity() {
+		return avaliableQuantity;
+	}
 
-    public Integer getAvaliableQuantity() {
-        return avaliableQuantity;
-    }
+	public void setAvaliableQuantity(Integer avaliableQuantity) {
+		this.avaliableQuantity = avaliableQuantity;
+	}
 
-    public void setAvaliableQuantity(Integer avaliableQuantity) {
-        this.avaliableQuantity = avaliableQuantity;
-    }
-    
-    
+	public void setItemDesc(String itemDesc) {
+		this.itemDesc = itemDesc;
+	}
+
     
 }

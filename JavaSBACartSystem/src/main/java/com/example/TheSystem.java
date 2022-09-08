@@ -54,17 +54,18 @@ public abstract class TheSystem {
     
     public Boolean add(Item item) {
         // Your code here
-    	if (item == null) {
-			return false;
-		} else if (item != null && itemCollection.containsKey(item)){
-			itemCollection.get(item).setQuantity(itemCollection.get(item).getQuantity() + 1);
-			return true;		
-		} else if (item != null && !itemCollection.containsKey(item)){
-			itemCollection.put(item.getItemName(), item);
-			return true;
-		} else {
-			return false;
+    	if (item != null) {
+			if (itemCollection.containsKey(item)){
+				itemCollection.get(item).setQuantity(itemCollection.get(item).getQuantity() + 1);
+				return true;		
+			} else if (!itemCollection.containsKey(item)){
+				itemCollection.put(item.getItemName(), item);
+				return true;
+			} 
 		}
+
+		return false;
+		
     }
 
     public Item remove(String itemName) {

@@ -7,6 +7,7 @@ public class AppSystem extends TheSystem {
 	private static final DecimalFormat df = new DecimalFormat("0.00");
 
     AppSystem() {
+    	super();
     }
 
     @Override
@@ -47,7 +48,7 @@ public class AppSystem extends TheSystem {
         // Your code here
     	if (super.getItemCollection().containsKey(item_name)) {
     		Item item = super.getItemCollection().get(item_name);
-    		item.setAvaliableQuantity(item.getAvaliableQuantity().intValue() - 1);
+    		item.getQuantity();//reduce by 1
 			return item;
 		} else {
 			return null;
