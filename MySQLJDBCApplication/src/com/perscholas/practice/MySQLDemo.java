@@ -34,12 +34,12 @@ public class MySQLDemo {
 //		mystmt.setString(2, "Larson");
 //		mystmt.setLong(3, 1002);
 //		mystmt.executeUpdate();
-		
+//		----------------------------------------------------		
 //		Separate Class for Queries
 //		PreparedStatement mystmt = conn.prepareStatement(MySQLDemo.GetEmployeByID);
 //		mystmt.setInt(1, 1002);
 //		ResultSet result = mystmt.executeQuery();
-		
+//		----------------------------------------------------		
 //		practice
 		PreparedStatement mystmt = conn.prepareStatement(MySQLDemo.GetEmployeByOfficeCode);
 //		mystmt.setInt(1, 1);
