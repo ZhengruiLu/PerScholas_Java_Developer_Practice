@@ -10,7 +10,7 @@ Time spent: **20** hours spent in total
 
 The following **functionality** is completed:
 
-* [X] Used **RDBMS** to store tables of students and courses
+* [X] Used **Relational Database Management System** to store tables of students and courses
 * [X] Generated the required tables (without rows) from entities(model classes) by using **Hibernate**
 * [X] Used **Data Access Object** to interact with the respective tables in database instance
 * [X] Support for extending functionalities
